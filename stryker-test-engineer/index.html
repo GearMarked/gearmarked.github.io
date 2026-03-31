@@ -1,39 +1,125 @@
-<div class="content">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stryker Test Engineer – Zach Newcome</title>
 
-  <p><strong>Dear Stryker Hiring Team,</strong></p>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      background: #fafafa;
+      color: #111;
+    }
 
-  <p>
-    The most effective R&D test engineers solve problems by asking the right questions and building the tools to find the solution. As a test engineer at Specialized, I applied this approach to solve an issue that had stumped the power systems team for months while also developing a validated test method to support design iteration.
-  </p>
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
 
-  <p>
-    An e-bike system was intermittently shutting down after 25 hours of riding with the only error code being a “No Motor” error. Electrical engineers had already performed continuity tests, deployed CAN diagnostics, and evaluated connection treatments without identifying a root cause.
-  </p>
+    .header {
+      border-bottom: 1px solid #e5e5e5;
+      padding-bottom: 20px;
+      margin-bottom: 40px;
+    }
 
-  <p>
-    Rather than continuing where they left off, I mapped the problem at a higher level. Two patterns stood out: the issue only appeared on carbon bikes, not alloy, and it manifested sooner in one model over another, despite sharing the same electrical system. These differences were mechanical—stiffness and suspension travel. I decided to run an existing ISO 4210 structural test on the assembled bike and found I could consistently recreate the electrical error.
-  </p>
+    .name {
+      font-size: 28px;
+      font-weight: 600;
+      margin: 0;
+    }
 
-  <p>
-    Isolating variables further, I noticed subtle voltage fluctuations on the system power bus synchronized with pedal stroke frequency. We swapped the CAN sniffers for an oscilloscope and saw it immediately: an uninterpretable CAN signal. Forces traveling through the battery-to-bike connector were fluctuating impedance across the CAN pins. The motor firmware, seeing no interpretable CAN messages from the battery, was shutting itself off.
-  </p>
+    .tagline {
+      color: #666;
+      margin-top: 4px;
+      font-size: 14px;
+    }
 
-  <p>
-    With the root cause identified, I built a voltage bridge PCB that allowed us to measure impedance across the connection during laboratory and real riding conditions. For the first time, we had a validated test and tool to reproduce and measure the failure. This enabled the design team to build prototypes, measure their effectiveness, and roll out a solution with confidence.
-  </p>
+    .role {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: 500;
+    }
 
-  <p>
-    Although I began this project with limited experience in CAN system design and troubleshooting, I developed a set of validated tools to enable design iteration. R&D environments demand knowing how to enter unfamiliar problem spaces, ask the right questions, and build the right tools to keep the organization moving forward. I’m excited to bring this experience to the unique challenges of R&D medical device testing at Stryker Neurovascular!
-  </p>
+    .company {
+      color: #888;
+      font-size: 14px;
+      margin-top: 4px;
+    }
 
-</div>
+    .content {
+      font-size: 16px;
+      line-height: 1.7;
+    }
 
-<div class="footer">
-  <div>Warm regards,</div>
+    .content p {
+      margin-bottom: 18px;
+    }
 
-  <div style="margin-top: 40px;">
-    <img src="/stryker/zbnsignature.png" style="height:50px;">
+    .footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid #e5e5e5;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <h1 class="name">Zach Newcome</h1>
+      <div class="tagline">Mechanical Engineer · R&D · Test Engineering</div>
+
+      <div class="role">Staff R&D Test Engineer Application</div>
+      <div class="company">Stryker Neurovascular</div>
+    </div>
+
+    <div class="content">
+
+      <p><strong>Dear Stryker Hiring Team,</strong></p>
+
+      <p>
+        The most effective R&D test engineers solve problems by asking the right questions and building the tools to find the solution. As a test engineer at Specialized, I applied this approach to solve an issue that had stumped the power systems team for months while also developing a validated test method to support design iteration.
+      </p>
+
+      <p>
+        An e-bike system was intermittently shutting down after 25 hours of riding with the only error code being a “No Motor” error. Electrical engineers had already performed continuity tests, deployed CAN diagnostics, and evaluated connection treatments without identifying a root cause.
+      </p>
+
+      <p>
+        Rather than continuing where they left off, I mapped the problem higher level. Two patterns stood out: the issue only appeared on carbon bikes, not alloy, and it manifested sooner in one model over another, despite sharing the same electrical system. These differences were mechanical; stiffness and suspension travel. I decided to run an existing ISO 4210 standard structural test on the assembled bike and found I could consistently recreate the electrical error.
+      </p>
+
+      <p>
+        Isolating variables further, I noticed subtle voltage fluctuations on the system power bus synchronized with pedal stroke frequency. We swapped the CAN sniffers for an oscilloscope and saw it immediately: an uninterpretable CAN signal. Forces traveling through the battery-to-bike connector were fluctuating impedance across the CAN pins. The motor firmware, seeing no interpretable CAN messages from the battery, was shutting itself off.
+      </p>
+
+      <p>
+        With the root cause identified, I built a voltage bridge PCB that allowed us to measure impedance across the connection during laboratory and real riding conditions. For the first time, we had a validated test and tool to reproduce and measure the failure. This enabled the design team to build prototypes, measure their effectiveness, and roll out a solution with confidence.
+      </p>
+
+      <p>
+        Although I began this project with limited experience in CAN system design and troubleshooting, I had developed a set of validated tools to enable design iteration. R&D environments demand knowing how to enter unfamiliar problem spaces, ask the right questions, and build the right tools to keep the organization moving forward. I’m excited to bring this experience to the unique challenges of R&D medical device testing at Stryker Neurovascular!
+      </p>
+
+    </div>
+
+    <div class="footer">
+      <div>Warm regards,</div>
+
+      <div style="margin-top: 40px;">
+        <img src="/stryker/zbnsignature.png" style="height:50px;">
+      </div>
+
+      <div style="margin-top: 8px;">Zach Newcome</div>
+    </div>
+
   </div>
 
-  <div style="margin-top: 8px;">Zach Newcome</div>
-</div>
+</body>
+</html>
